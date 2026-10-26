@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "WebGL rendering",
+    "labels hide/show",
+    "stock selector changes warehouse and opens roof",
+    "focus camera",
+    "fullscreen enter/exit",
+    "camera top/reset",
+    "mobile has no horizontal overflow",
+    "no-WebGL accessible data fallback"
+  ],
+  "pageErrors": []
+}

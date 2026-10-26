@@ -1,0 +1,26 @@
+{
+  "authorization": "User requested combining WareTrack 3D into DX-OS and refinement; reversible local changes and isolated tests authorized.",
+  "decision": "allow",
+  "scope": "portal geometry, camera, illustrative animation, API-backed selection, local regression validation",
+  "ownership": {
+    "integration": "/root, sole writer main checkout",
+    "assets": "isolated warehouse-assets",
+    "motion": "isolated warehouse-motion",
+    "review": "read-only merge_review"
+  },
+  "sourceProject": "/home/chinhan/projects/waretrack",
+  "targetProject": "/home/chinhan/projects/dxos-logistics",
+  "sourceHashes": {
+    "src/scene/ScreenLabel.tsx": "690fdabc079d1a5d952501b050479bde0ddb68acf477a3eaa6195056a0ad52e8",
+    "src/scene/WarehouseScene.tsx": "38ca286a58eb18855e1399d34829f1c08a3104cf9e829b74325775cea2b3332c",
+    "src/scene/Primitives.tsx": "b502fc157252c4495fa755f17560e475f6ef0479269829cf0c5945df6c8427e5",
+    "src/scene/Vehicles.tsx": "bdcd6c1f8b99befc2b5db4e5e0408ce5c244bd7b574d56df27155aadb634b9ba",
+    "src/scene/Building.tsx": "e4db762f7131f7304ffd217382dc7502c80dee8ca52071d912ee6a34e8e0b152"
+  },
+  "limits": [
+    "No domain tick copied from WareTrack",
+    "No real GPS or facility survey claims",
+    "No publication, commit, push or deletion of workspaces"
+  ],
+  "createdAt": "2026-10-14T13:05:32.162253+00:00"
+}

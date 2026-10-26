@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "OIDC login",
+    "temperature quarantine",
+    "normal temperature retains hold",
+    "role gated release",
+    "authorized release",
+    "Escape dialog close",
+    "mobile no horizontal overflow"
+  ],
+  "pageErrors": []
+}

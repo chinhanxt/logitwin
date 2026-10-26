@@ -1,0 +1,72 @@
+.movement-actions {
+  max-width: 400px;
+  min-width: 190px;
+  margin-left: auto;
+}
+.movement-action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.movement-actions > small {
+  display: block;
+  font-size: 9px;
+  color: #9aaec5;
+  margin-top: 10px;
+  line-height: 1.7;
+  max-width: 280px;
+}
+.receipt-form {
+  display: grid;
+  gap: 12px;
+  background: #f7faff;
+  border: 1px solid #e4edf8;
+  border-radius: 9px;
+  padding: 14px;
+  margin-top: 12px;
+}
+.receipt-form label {
+  font-size: 10px;
+  color: #7894b7;
+}
+.receipt-form label input,
+.receipt-form label textarea {
+  display: block;
+  margin-top: 7px;
+  font-size: 10px;
+}
+.receipt-form small {
+  font-size: 9px;
+  color: #9aaec5;
+  line-height: 1.8;
+}
+.lot-details {
+  white-space: normal;
+  min-width: 160px;
+  max-width: 250px;
+  margin-top: 6px;
+  font-size: 9px;
+  color: #91a6bf;
+}
+.lot-details summary {
+  cursor: pointer;
+  color: #7c9dc5;
+}
+.lot-details > div {
+  padding: 8px 0;
+  border-bottom: 1px solid #edf2f9;
+}
+.lot-details b {
+  font-weight: 500;
+  font-size: 9px;
+}
+.lot-details small {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 850px) {
+  .movement-actions {
+    margin-left: 35px;
+    width: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "database": "var/core.sqlite",
+  "businessFingerprint": "46855cebc39eed6b400fd7a25f4b0ff19cee4630454c529efc2b4174c740d1cf",
+  "rows": {
+    "stock": 18,
+    "stock_lots": 18,
+    "movement_lots": 1,
+    "movements": 1,
+    "decisions": 6,
+    "workflows": 5,
+    "events": 23
+  },
+  "afterBusinessFingerprint": "46855cebc39eed6b400fd7a25f4b0ff19cee4630454c529efc2b4174c740d1cf",
+  "preserved": true
+}

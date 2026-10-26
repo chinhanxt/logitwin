@@ -1,0 +1,12 @@
+name: dxos-logistics
+services:
+  identity:
+    image: quay.io/keycloak/keycloak:26.6.3@sha256:9b0330756022422149aa6502eb2def8cd47c6e1b000c7c65cdb13e7c0133e992
+    command: [start-dev, --import-realm, --hostname=http://127.0.0.1:5192]
+    ports: ["127.0.0.1:5192:8080"]
+    mem_limit: 1g
+    volumes:
+      - ../var/keycloak:/opt/keycloak/data/import:ro
+      - identity-data:/opt/keycloak/data
+volumes:
+  identity-data:

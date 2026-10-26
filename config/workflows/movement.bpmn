@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="https://dxos.local/workflow/v1">
+ <process id="movementLifecycle" name="Giao và nhận hàng có kiểm soát" isExecutable="true">
+  <startEvent id="start"/><userTask id="dispatch_or_receive" name="Chờ xuất giao, nhận hàng hoặc hủy"/>
+  <exclusiveGateway id="commandChoice" default="finishWithoutDispatch"/>
+  <serviceTask id="prepareDispatch" name="Chuẩn bị lệnh xuất giao" implementation="${environment.services.prepareCommand}"/>
+  <userTask id="receive" name="Chờ xác nhận nhận hàng"/>
+  <serviceTask id="prepareReceipt" name="Chuẩn bị lệnh nhận hàng hoặc hủy" implementation="${environment.services.prepareCommand}"/>
+  <endEvent id="completed"/>
+  <sequenceFlow id="a" sourceRef="start" targetRef="dispatch_or_receive"/><sequenceFlow id="b" sourceRef="dispatch_or_receive" targetRef="commandChoice"/>
+  <sequenceFlow id="dispatch" sourceRef="commandChoice" targetRef="prepareDispatch"><conditionExpression xsi:type="tFormalExpression"><![CDATA[${environment.services.isDispatchRequested()}]]></conditionExpression></sequenceFlow>
+  <sequenceFlow id="finishWithoutDispatch" sourceRef="commandChoice" targetRef="prepareReceipt"/>
+  <sequenceFlow id="c" sourceRef="prepareDispatch" targetRef="receive"/><sequenceFlow id="d" sourceRef="receive" targetRef="prepareReceipt"/>
+  <sequenceFlow id="done" sourceRef="prepareReceipt" targetRef="completed"/>
+ </process>
+</definitions>

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "decision": "9e7e98de-6260-423c-b02d-7fa60f640e2a",
+  "movement": "a4c74c46-6322-4734-be41-c571c46aa570",
+  "quantity": 4,
+  "realtime": "SSE reflected second-user changes within 8 seconds",
+  "engine": "26.0.5",
+  "pageErrors": [],
+  "remoteRequests": [],
+  "visualChecks": [
+    "warehouse motion",
+    "paused frames and draw calls settle",
+    "focus/top demand camera settles",
+    "network motion",
+    "reduced motion freezes",
+    "playback leaves API business state unchanged"
+  ]
+}

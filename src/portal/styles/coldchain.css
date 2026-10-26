@@ -1,0 +1,39 @@
+.coldchain-form {
+  padding: 0 25px 25px;
+  max-width: 680px;
+}
+.coldchain-form label {
+  display: block;
+  font-size: 11px;
+  color: #7c95b1;
+  margin: 20px 0;
+}
+.coldchain-form select,
+.coldchain-form input,
+.coldchain-form textarea {
+  display: block;
+  margin-top: 9px;
+}
+.coldchain-form select {
+  min-width: 150px;
+}
+.coldchain-form input {
+  max-width: 220px;
+}
+.coldchain-form p {
+  color: #98a9bd;
+  font-size: 11px;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+.tier-grid article > span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tier-grid article > small {
+  color: #a1b1c2;
+  display: block;
+  margin-top: 13px;
+  font-size: 9px;
+}

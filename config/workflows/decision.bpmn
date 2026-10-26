@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="https://dxos.local/workflow/v1">
+ <process id="decisionLifecycle" name="Phê duyệt và thực thi quyết định" isExecutable="true">
+  <startEvent id="start"/><userTask id="review" name="Chờ người phê duyệt"/>
+  <exclusiveGateway id="reviewChoice" default="rejected"/><userTask id="execute" name="Chờ phát lệnh thực thi"/>
+  <exclusiveGateway id="executeChoice" default="cancelled"/>
+  <serviceTask id="prepareCommand" name="Chuẩn bị lệnh nghiệp vụ để commit" implementation="${environment.services.prepareCommand}"/>
+  <endEvent id="completed"/><endEvent id="declined"/>
+  <sequenceFlow id="a" sourceRef="start" targetRef="review"/><sequenceFlow id="b" sourceRef="review" targetRef="reviewChoice"/>
+  <sequenceFlow id="accepted" sourceRef="reviewChoice" targetRef="execute"><conditionExpression xsi:type="tFormalExpression"><![CDATA[${environment.services.isApproved()}]]></conditionExpression></sequenceFlow>
+  <sequenceFlow id="rejected" sourceRef="reviewChoice" targetRef="declined"/>
+  <sequenceFlow id="c" sourceRef="execute" targetRef="executeChoice"/>
+  <sequenceFlow id="perform" sourceRef="executeChoice" targetRef="prepareCommand"><conditionExpression xsi:type="tFormalExpression"><![CDATA[${environment.services.isExecuteRequested()}]]></conditionExpression></sequenceFlow>
+  <sequenceFlow id="cancelled" sourceRef="executeChoice" targetRef="declined"/><sequenceFlow id="done" sourceRef="prepareCommand" targetRef="completed"/>
+ </process>
+</definitions>

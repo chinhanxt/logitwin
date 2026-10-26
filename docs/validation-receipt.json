@@ -1,0 +1,193 @@
+{
+  "createdAt": "2026-10-14T09:15:52.005969+00:00",
+  "round": 2,
+  "sourceSnapshot": "718a932f29ed693775b92eb83a25b09757b1b678ee4e8ce3ca05db7cf65458ef",
+  "sourceFiles": {
+    ".gitignore": "98c4ff01db11fa9b6bbe2009ee8eb4e11fd336cd74d91d68c080e2946d0a62f0",
+    "config/check-ai.ts": "0a5087d2e71a7ffdf71178a7bc9d8b9b1717a2c335ab7d46555799a7cff542ee",
+    "config/check-workflow.ts": "fd06c94f088687e6e1713ead90575cbc08ace636c70e05c491d78c0a9d0f32a9",
+    "config/compose.yaml": "d63ec8f5d4ef2651ad6c1c4b078c8cb2b0d11312c9791c67cbcd2bc98dd0134a",
+    "config/dev.mjs": "6e938f93bdcd7ccd2409f2d8b72a0821d437c0286302a8b3eff7987415a04163",
+    "config/identity-init.mjs": "b3e85a05d41dfbb2c869213d2148f2fbf3a17343a79234b0105866ef5aaffb8f",
+    "config/playwright.config.ts": "e07c8e98e3581eae00b240db2c453bc1d07270d7909cd0af2eae5824c3778ca1",
+    "config/workflows/decision.bpmn": "f84df47275c80a2f3dd21cba39a1ce245a4dcfe245d2b4d51b6d96c6c7627a38",
+    "config/workflows/movement.bpmn": "113230856a3bd6e6f109fe51a0bd120bd63d4574ce660c83cd884ac04a5bf158",
+    "index.html": "61c613132a25aac142965966e94cd81e2effec7575d1a0fecf04848890b6ffaf",
+    "package-lock.json": "9cc63141605690941fcc72623ec12c67431f0cd9e91126674ba528b2244c771e",
+    "package.json": "a9273d2f30c501dac7b2de58ae79443b5f970385d2bb38a5ea7f71af216c3012",
+    "public/fonts/OFL.txt": "6b7f8f73609a25ea78c891e34cf37b06f8a676b7ea986e941e43b009110f2a85",
+    "public/fonts/be-vietnam-pro-0.ttf": "4ad53eac036092be79a34b5fa0aa32d0ebb3c7e5df4bc058764f5614fbf148a0",
+    "public/fonts/be-vietnam-pro-1.ttf": "557a1c42a7f8eb83f84255d475017b1235c1101b899367f974a1cbfa19cd7c3d",
+    "public/fonts/be-vietnam-pro-2.ttf": "cbf437bf71c8536a7aaed632dce2583ea5ec97c07efffc625c31991d1027ba3b",
+    "public/fonts/be-vietnam-pro-3.ttf": "aef76cd15b8c9faa1ff21951bb71963a774aa381526c557e5a52f38d430c4650",
+    "src/core/contracts.ts": "2da26e64c6c1ce7750368ee58d4b46062b9d04cecea1b5a1db068798128b12a4",
+    "src/core/database.ts": "d2c25707dd573eb7a4fc86999eb2d0cdb21e3b0b9261479d14fe6eca39d36f14",
+    "src/core/event-stream.ts": "baf770c0591b3f4893cec1aec0e78aa67d4dae6ad0724bbf5d90debc1d04fa02",
+    "src/core/identity.ts": "80739607b1b59548799e95b811c31c647a94da2e02bc556d12bc5fdd31f9aac5",
+    "src/core/intelligence.ts": "d591cb304a9677a338f8796da29480a6e36ecb4d9e34973658b6a40743ab9c0e",
+    "src/core/lot-migration.ts": "37215d1c07e3d22e202c339dc02ce4a0ae851722f7de02c7681addcb8de7291f",
+    "src/core/operations.ts": "3757cd37d7d8e301cda34e8f460845360ff25670ca644fdaeca9745ecdc86b5c",
+    "src/core/rag.ts": "23d79aa116fa4877fd1b5d73ffd04737123d1b394e20081cf0417f3a9ea73d11",
+    "src/core/server.ts": "51705dca4d71cd323f1d29ca75ac0ade28b375b972d511c8b0c35be83cae01c5",
+    "src/core/workflow.ts": "7ed25db3056f9fd74f9ff5fcd54946bd1c708bfcb9d8926c80f7a9f3e5c9b85a",
+    "src/gateway.ts": "98909613ef9cb79aa6d6bb75c474cbc2d348ec5b1d6c34fa5dacd938dba589d8",
+    "src/modules/logistics/coldchain.ts": "7d44822016641bd663320d8266b8e052b2f40c0c191febf1d680ef00e55c5318",
+    "src/modules/logistics/decisions.ts": "72fbd3aba0373a6216b0af52353f81f2d773f5e904bf4baf2cfc6b9669c4e881",
+    "src/modules/logistics/lots.ts": "a2672e5ae4255563883b211b3a1ac73228a6f41e1677bd8d1526c37873e4b6e1",
+    "src/modules/logistics/movements.ts": "134cd32ed047a675e4c20c76895a23a58cc105f682052bde463d3080a35ca1d9",
+    "src/modules/logistics/routing.ts": "71d9219fd798f152327764b2ea3cff657fef32737cd967eb6bbe711bc6063024",
+    "src/modules/logistics/seed.ts": "6178fbf04e9d300ec5c5a4744d9cd4f6f7256f530936ac033b92fd4ab3347552",
+    "src/modules/logistics/sop.ts": "886c8e2aff0a601ebea69064fcf08eadce1a143d29cad95f73c0d03056c7ac91",
+    "src/portal/App.tsx": "a1b279a2fe85e7fcf6386968c05aad0a0ec79f10fb4b4dde0879086da248f92c",
+    "src/portal/Architecture.tsx": "5821c5c0719dafb3202744c472a9bc36be0ba7c7d0424ae52fadc06db09347c9",
+    "src/portal/Assistant.tsx": "28e16987df61576dc4d4782fdd040b32a0f73f12c0d2dfa6b127aee14b52bc9f",
+    "src/portal/ColdChain.tsx": "63aafb7ebb761434c714e6102c0f612f0742701b32f5bf72168a9263b009e2d6",
+    "src/portal/Dashboard.tsx": "7e626ae97b8890d34c0953f3ad42e0aca35cc30d7a3a508dffd56a1489ed9290",
+    "src/portal/DecisionDrawer.tsx": "c319ceda1a2a672f42a3f4be37dbbf57a332ee788812976f428d3110f2a4802b",
+    "src/portal/Inventory.tsx": "1deb05d1f5e221ce226ea21cc3e110931ea791a735bc02b7ced4c36e322a0542",
+    "src/portal/Knowledge.tsx": "8b5c9524326c4dff9cd767cb0358fe3cc22915743cb81512fe3276c341b6f9ff",
+    "src/portal/MovementActions.tsx": "63afa9f597eeb016a44f50aba1af89d2606f675edb95e32f722d33ae703b0a35",
+    "src/portal/Network.tsx": "41b5530e1e8048af417052b954fa9efd36d105995da393b39c07ae838c831c54",
+    "src/portal/Routing.tsx": "cc03b5a92f3543f37946799d36662b2e317d91bf2155c255e5e725c93dd78754",
+    "src/portal/api.ts": "69a25e8991a8b91369325314ce0fd60f047e16149b296b091e6fedcb61e07232",
+    "src/portal/fonts.css": "c53af06545694289e8b865160388e451866c27fc3f83c3aeffd30e7d003d4a8f",
+    "src/portal/main.tsx": "7dd0ec7c005211dc0191dbe92115cb395ec8f04c2591d2259039a5d7b42fb3c0",
+    "src/portal/styles/coldchain.css": "7cf4a07c74312b9dee06a883e81f08f418a8524c0b111717266dcef5dd5da084",
+    "src/portal/styles/components.css": "e5b03a549ca9f3e992855a4e870b3ab91c31f5812623485a42267590226a3e80",
+    "src/portal/styles/movement-actions.css": "76122ad06d864fa21a2c1b23c58d60372a3a7588838428d2fb81c2d3c62b2d79",
+    "src/portal/styles/operations.css": "6bdbf4d5e51eb6671d289f2fd851b361e01fffdaef036eb46093c82226953398",
+    "src/portal/styles/responsive.css": "af1f8a39ff5198f2a4a9457bcdfb20db00b2a4b744a5ee4b7ec6b44637e99c31",
+    "src/portal/styles/shell.css": "cc5516a1ddde39c4945a3c7defb473f2d3583bc900eb4730d57c614b24375c27",
+    "src/portal/styles.css": "c89cf5d5c4c368c093593886117e4765836a0b87e274731efdb04315d7bf5697",
+    "src/portal/twin/Inspector.tsx": "2af61dd19937221ef047164e46cb6142e2d5c21ed66f6c0681edb3f9d2a7cd7f",
+    "src/portal/twin/LotDetails.tsx": "f928a68fa60e0e1a82d21d5ebf4ce5723532e11bab85251c225a622b492fc9fa",
+    "src/portal/twin/OperationalTwin.tsx": "530f09c462bfb5a035da432de2cb3d7e50c60d81253ab32dd7d35c440a5e79ff",
+    "src/portal/twin/Primitives.tsx": "4adcbd3d27d46f94f18d98b377ca0a6e57ed77fa736254c376f65f1cef33f5ec",
+    "src/portal/twin/Scene.tsx": "a35b00450dc157bbedade0aa085d2d50c2793d52b2d588eb9a96681119818d7c",
+    "src/portal/twin/StoreBuilding.tsx": "d7478d6a935ba4a120f01e699dc850bfc8b5f2989a1c4cff6f1625a2487ceb05",
+    "src/portal/twin/WorkflowEvidence.tsx": "7374dc81f36652a984fc5ac7793d2e433bb18bb3cc060276d2645f6a46f49bb1",
+    "src/portal/twin/model.ts": "853f86c254d4fc1b2eb8072827f956ae90ab826d9fb90dbfd16b079959e192be",
+    "src/portal/twin/twin.css": "65cd51880ea696219d05d92e5bde2acb40d2f08d3cf5e42e9ea8526648d10fe7",
+    "src/portal/useLiveUpdates.ts": "71a3b114053a4ab9d1b07cf1fb6fb83da9d3d89209e56b895cb33d295e6b6027",
+    "tests/browser-smoke.py": "a5f2710fb662d3fe7fe1dda905e21aa6af7c135e76e9816cfa8722b98e1f6b9d",
+    "tests/coldchain.test.ts": "4352e5cd9001d3e39669d56518ca83e12d087cbcdf68a037c72e60e49ef60434",
+    "tests/core.test.ts": "1dfb93acebfc557a887965f9e44bc2d074d121d688aab54e78365f56abf23d05",
+    "tests/events.test.ts": "65d289a04a3e450af4d6c00b87e3192f70c1504633c364db8a2075c534aeaf74",
+    "tests/identity.e2e.ts": "bbf104437d2b963f344885ec1f0f9a1b987a9ca820732eee876a6d003137f977",
+    "tests/intelligence.test.ts": "31fd21078cd858953428b219284fc778e98a58477d4f57166835fbd16c39f738",
+    "tests/lifecycle.test.ts": "084f34d4f263792fbfc04687c39ac1aa860b690d064b37a6c58238b4b3d88d6c",
+    "tests/persistence.test.ts": "721b013c8e4445789b6f12be5f78e8652d5e36900bbc7e3db708f152a7225d1d",
+    "tests/portal.e2e.ts": "21b7972a3c9d83f8fcecbd13b3838cb7d189e0c2b928be69978ebf1e53824508",
+    "tests/twin-browser-smoke.py": "a57f72dbeb794c6d83c52654322497307c2b208a03056b06a4d4ad355dbce0e8",
+    "tests/twin.e2e.ts": "c19a1df621612dc489d940a1b0f0a396e27f8e33f2abe4f0c43cd4039b177a37",
+    "tests/twin.test.ts": "906bf416f0e2e7695af98edf7b6892468702fe8be7e3c7167dde90994ee30ffa",
+    "tests/workflow.test.ts": "0d51faa54f5e0e390da6d00a52b8f170a0f4adf5bf82d1ef8bfdbf316596cf7a",
+    "tsconfig.json": "e52839dd82255cb1f33c3d4f1ff096d8a16d68fce092c17d21b8d6678caf5079",
+    "vite.config.ts": "d182720067c2604e0e7e3b3fb173beb04d2428f733a98bead5401879fa7b800a"
+  },
+  "buildFiles": {
+    "dist/assets/OperationalTwin-0ZE7mkV1.js": "705bf157a4f9b06d6c4ddee26241d2abe95e45d00599335666130ab2daee0f8f",
+    "dist/assets/OperationalTwin-ZH2Ulow-.css": "dcb0ec2ecc25b608be9cf1807acdca3d03d78473dabd1aecbd408a5e89e54436",
+    "dist/assets/Scene--vCnXHwQ.js": "a980b083f2d80593a448f5c52d607be7735b25b9bc885052e37e31c072c0ae31",
+    "dist/assets/index-BExOlZv6.js": "2ecacc5ec84a1ad2e8b2ecf6931f38a52c5b472900b0459bee209fb394a3156c",
+    "dist/assets/index-D83GK6K1.css": "4e78518ef543334bd1cb37ab8f6bb9f404caca537a89469a6b01cd72b8505035",
+    "dist/fonts/OFL.txt": "6b7f8f73609a25ea78c891e34cf37b06f8a676b7ea986e941e43b009110f2a85",
+    "dist/fonts/be-vietnam-pro-0.ttf": "4ad53eac036092be79a34b5fa0aa32d0ebb3c7e5df4bc058764f5614fbf148a0",
+    "dist/fonts/be-vietnam-pro-1.ttf": "557a1c42a7f8eb83f84255d475017b1235c1101b899367f974a1cbfa19cd7c3d",
+    "dist/fonts/be-vietnam-pro-2.ttf": "cbf437bf71c8536a7aaed632dce2583ea5ec97c07efffc625c31991d1027ba3b",
+    "dist/fonts/be-vietnam-pro-3.ttf": "aef76cd15b8c9faa1ff21951bb71963a774aa381526c557e5a52f38d430c4650",
+    "dist/index.html": "ca437ef1d69c765792b7316de43e28484a0d874fa12065264ad04ba9eb6656f8"
+  },
+  "briefPdfSha256": "ed57bb280ae3cad2ae7f1ff9b4c00ab3c8d0b6d4138d8e19f90ab5ef5fe24393",
+  "agents": {
+    "research": "/root/brief_research",
+    "lifecycle": "/root/lifecycle",
+    "ui3d": "/root/ui3d",
+    "integration": "/root"
+  },
+  "checks": {
+    "typecheckAndProductionBuild": "passed",
+    "coreTests": {
+      "passed": 35,
+      "failed": 0
+    },
+    "browserE2E": {
+      "passed": 5,
+      "failed": 0,
+      "database": "var/e2e-round-2-final.sqlite"
+    },
+    "bpmnRuntimeRecovery": "passed",
+    "twinApi": {
+      "passed": true,
+      "decision": "0c331caf-6be7-4997-be50-ddaea1802e16",
+      "movement": "1ff15802-9134-48b5-9e49-d07ef1a42e37",
+      "quantity": 2,
+      "realtime": "SSE reflected second-user changes within 8 seconds",
+      "engine": "26.0.5",
+      "pageErrors": [],
+      "remoteRequests": []
+    },
+    "twinBrowser": {
+      "passed": true,
+      "checks": [
+        "WebGL rendering",
+        "stock selector",
+        "focus camera",
+        "fullscreen enter/exit",
+        "camera top/reset",
+        "no-WebGL accessible data fallback"
+      ],
+      "pageErrors": []
+    },
+    "migration": {
+      "aggregatePreserved": true,
+      "rows": 18,
+      "legacyLots": 18,
+      "currentDatabase": "var/core.sqlite",
+      "beforeStockHash": "8801f132680b12dfefe3a46d34300110ce877d87f53676d03afde2fae83838e3",
+      "afterStockHash": "8801f132680b12dfefe3a46d34300110ce877d87f53676d03afde2fae83838e3"
+    },
+    "localAi": {
+      "indexed": {
+        "indexed": 2,
+        "model": "bge-m3:latest"
+      },
+      "mode": "source-excerpt",
+      "model": null,
+      "numericCheck": "source-only",
+      "sources": [
+        {
+          "id": "5ea8c9ff-3648-4e4b-9ce0-5bc72c9e2ed7",
+          "title": "SOP hàng tươi · bản mẫu",
+          "version": 1,
+          "score": 0.5708537680551778
+        },
+        {
+          "id": "5ea8c9ff-3648-4e4b-9ce0-5bc72c9e2ed7",
+          "title": "SOP hàng tươi · bản mẫu",
+          "version": 1,
+          "score": 0.4962835579029229
+        }
+      ],
+      "answer": "Chưa thể xác nhận câu trả lời từ mô hình. Đoạn nguồn liên quan: SOP mẫu cho demo Logistics, không phải quy chuẩn an toàn sản phẩm. Người tạo đề xuất không tự phê duyệt. Phê duyệt chưa giữ hàng; thực thi đề xuất điều chuyển mới giữ hàng tại nguồn theo FEFO. Xuất giao giảm tồn vật lý và lượng đã giữ tại nguồn, chuyển hàng sang trạng thái đang vận chuyển. Xác nhận nhận hàng mới tăng tồn tại đích và giữ nguyên nguồn gốc lô. Hàng hết hạn hoặc cách ly không được xuất giao hoặc nhận. Xuất và nhận cần bản đọc nhiệt độ mẫu trong ngưỡng 2–8°C ở 5 phút gần nhất; chưa có cảm biến xe hay tủ lạnh thật. Nhiệt độ trở lại ngưỡng không tự giải phóng hàng cách ly, người có quyền phải ghi lý do kiểm tra chất lượng. Lệnh đã xuất giao không được hủy, cần quy trình hoàn trả riêng chưa triển khai. Hủy lệnh đang giữ hàng giải phóng lượng đã giữ. Nhập hàng tạo đơn mua, chưa tăn",
+      "ms": 20769
+    },
+    "allCodeFilesBelow500Lines": true
+  },
+  "runtime": {
+    "node": "v24.14.1",
+    "portal": "http://127.0.0.1:5190",
+    "database": "var/core.sqlite",
+    "workflowEngine": "bpmn-engine26.0.5",
+    "identityImage": "quay.io/keycloak/keycloak:26.6.3@sha256:9b0330756022422149aa6502eb2def8cd47c6e1b000c7c65cdb13e7c0133e992",
+    "scope": "local-development"
+  },
+  "limitations": [
+    "Procedural store layout/vehicles illustrate state, not GPS or physical count",
+    "Manual demo temperature evidence and generic2-8C policy",
+    "Legacy lot origins explicitly unknown; no partial receipt/return/sales/disposal/recall",
+    "No FL/PACO/OCR/real NGSI-LD sensors/Lakehouse/immutable ledger/GitOps/verified full restore",
+    "RAG token membership is not semantic fact verification; current AI validation used safe source-excerpt fallback"
+  ],
+  "buildAdvisory": "Scene lazy chunk926.57kB raw251.68kB gzip; loaded only for WebGL scene"
+}

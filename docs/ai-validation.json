@@ -1,0 +1,25 @@
+{
+  "indexed": {
+    "indexed": 2,
+    "model": "bge-m3:latest"
+  },
+  "mode": "source-excerpt",
+  "model": null,
+  "numericCheck": "source-only",
+  "sources": [
+    {
+      "id": "5ea8c9ff-3648-4e4b-9ce0-5bc72c9e2ed7",
+      "title": "SOP hàng tươi · bản mẫu",
+      "version": 1,
+      "score": 0.5708537680551778
+    },
+    {
+      "id": "5ea8c9ff-3648-4e4b-9ce0-5bc72c9e2ed7",
+      "title": "SOP hàng tươi · bản mẫu",
+      "version": 1,
+      "score": 0.4962835579029229
+    }
+  ],
+  "answer": "Chưa thể xác nhận câu trả lời từ mô hình. Đoạn nguồn liên quan: SOP mẫu cho demo Logistics, không phải quy chuẩn an toàn sản phẩm. Người tạo đề xuất không tự phê duyệt. Phê duyệt chưa giữ hàng; thực thi đề xuất điều chuyển mới giữ hàng tại nguồn theo FEFO. Xuất giao giảm tồn vật lý và lượng đã giữ tại nguồn, chuyển hàng sang trạng thái đang vận chuyển. Xác nhận nhận hàng mới tăng tồn tại đích và giữ nguyên nguồn gốc lô. Hàng hết hạn hoặc cách ly không được xuất giao hoặc nhận. Xuất và nhận cần bản đọc nhiệt độ mẫu trong ngưỡng 2–8°C ở 5 phút gần nhất; chưa có cảm biến xe hay tủ lạnh thật. Nhiệt độ trở lại ngưỡng không tự giải phóng hàng cách ly, người có quyền phải ghi lý do kiểm tra chất lượng. Lệnh đã xuất giao không được hủy, cần quy trình hoàn trả riêng chưa triển khai. Hủy lệnh đang giữ hàng giải phóng lượng đã giữ. Nhập hàng tạo đơn mua, chưa tăn",
+  "ms": 20769
+}

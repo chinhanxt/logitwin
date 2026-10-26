@@ -1,0 +1,9 @@
+node_modules/
+dist/
+var/
+.env*
+test-results/
+playwright-report/
+.claude-flow/
+.swarm/
+*.tsbuildinfo

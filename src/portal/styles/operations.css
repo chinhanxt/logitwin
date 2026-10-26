@@ -1,0 +1,244 @@
+.layer-list p {
+  font-size: 11px;
+  line-height: 1.9;
+  color: #93a3b5;
+}
+.architecture > .notice {
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.knowledge-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 24px;
+}
+.search-row {
+  display: flex;
+  padding: 0 24px 20px;
+  gap: 10px;
+}
+input,
+textarea {
+  border: 1px solid #dce6f2;
+  border-radius: 7px;
+  padding: 11px 12px;
+  width: 100%;
+  background: #fcfdff;
+  color: #526c89;
+  font-size: 12px;
+}
+input::placeholder {
+  color: #a3b1c3;
+}
+.document {
+  border-top: 1px solid #eaf0f7;
+  padding: 24px;
+}
+.document h3 {
+  margin: 12px 0;
+}
+.document p {
+  font-size: 12px;
+  line-height: 1.9;
+  white-space: pre-wrap;
+  color: #8196ae;
+}
+.document small {
+  display: block;
+  color: #a5b1c0;
+  margin-top: 16px;
+  font-size: 9px;
+}
+.document-form {
+  padding: 25px;
+  height: fit-content;
+}
+.document-form p {
+  font-size: 11px;
+  color: #97a7ba;
+  line-height: 1.8;
+  margin: 15px 0;
+}
+.document-form label {
+  display: block;
+  margin: 20px 0;
+  color: #7890aa;
+  font-size: 11px;
+}
+.document-form input,
+.document-form textarea {
+  display: block;
+  margin-top: 8px;
+  resize: vertical;
+}
+.document-form small {
+  display: block;
+  color: #9aabbd;
+  margin-top: 12px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 25px;
+  padding: 0 2px;
+  color: #a3b0c1;
+  font-size: 9px;
+}
+footer > span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: #273f6038;
+  backdrop-filter: blur(3px);
+  z-index: 50;
+  display: flex;
+  justify-content: flex-end;
+}
+.drawer {
+  width: min(520px, 100%);
+  height: 100%;
+  overflow: auto;
+  background: white;
+  box-shadow: -10px 0 50px #18304c18;
+  padding: 30px;
+}
+.drawer-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.drawer-heading .eyebrow {
+  margin: 0;
+}
+.drawer h2 {
+  font-size: 27px;
+  margin: 22px 0 12px;
+}
+.explain-mode {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #eef5ff;
+  color: #4d84c8;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 25px 0;
+  font-size: 12px;
+}
+.explain-mode small {
+  display: block;
+  font-size: 10px;
+  color: #8ba5c5;
+  margin-top: 5px;
+}
+.explanation {
+  display: flex;
+  gap: 15px;
+  margin: 25px 0;
+}
+.explanation > span {
+  font-size: 11px;
+  color: #8fb1db;
+  padding-top: 2px;
+}
+.explanation h3 {
+  font-size: 13px;
+  margin-bottom: 9px;
+}
+.explanation p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #8294aa;
+}
+.evidence {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 11px;
+  color: #788fa9;
+}
+.evidence small {
+  display: block;
+  font-size: 9px;
+  margin-top: 9px;
+  overflow-wrap: anywhere;
+  color: #9aaabd;
+}
+.drawer-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+.drawer-actions p {
+  font-size: 11px;
+  color: #9aaabd;
+  line-height: 1.8;
+  width: 100%;
+}
+@media (min-width: 1600px) {
+  main {
+    padding-top: 45px;
+  }
+  .overview-grid {
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .network svg {
+    max-height: 440px;
+  }
+  .decision-card {
+    padding: 26px 0;
+  }
+  .metric {
+    padding: 25px;
+  }
+}
+@media (max-width: 1150px) {
+  .sidebar {
+    width: 215px;
+    padding-inline: 12px;
+  }
+  .main-shell {
+    margin-left: 215px;
+    width: calc(100% - 215px);
+  }
+  main {
+    padding: 25px;
+  }
+  .topbar {
+    padding-inline: 25px;
+  }
+  .metrics {
+    gap: 10px;
+  }
+  .metric {
+    padding: 15px;
+  }
+  .metric > div {
+    font-size: 10px;
+  }
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+  .network svg {
+    max-height: 400px;
+  }
+  .flow-strip {
+    flex-wrap: wrap;
+  }
+  .flow-strip > div:first-child {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .page-heading h1 {
+    font-size: 24px;
+  }
+  .knowledge-grid {
+    grid-template-columns: 1fr;
+  }
+}
